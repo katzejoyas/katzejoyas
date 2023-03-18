@@ -1,0 +1,452 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px; }
+
+* {
+  box-sizing: border-box; }
+
+.header_img {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../imagenes/header.png") top center no-repeat;
+  background-size: 100% auto; }
+
+header {
+  padding-bottom: 3%; }
+
+.menu_desktop {
+  padding-top: 5%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  .menu_desktop li {
+    display: inline-block; }
+    .menu_desktop li a {
+      font-family: "Lexend Tera", sans-serif;
+      font-weight: 200;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 3px 20px;
+      background-color: black;
+      transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; }
+      .menu_desktop li a:hover {
+        box-shadow: inset 124px 0px 0px 20px white;
+        color: black; }
+
+.item_menu {
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center; }
+
+.menu_y_carrito,
+.logo_img,
+.carrito_del_header {
+  display: flex;
+  justify-content: space-evenly; }
+
+.carrito_del_header {
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5%; }
+
+.logo_img img {
+  padding: 12%; }
+
+.boton_menu,
+.boton_buscar {
+  display: none; }
+
+.boton_mobile,
+.buscar_mobile {
+  border: 0; }
+
+.titulo_principal {
+  grid-area: tituloprincipal;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+  text-align: center; }
+  .titulo_principal p {
+    display: inline-block;
+    text-align: center; }
+
+.titulo_buscar_banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "tituloprincipal tituloprincipal barrabuscar" "bannerimg bannerimg bannerimg";
+  width: 95%;
+  margin: auto; }
+
+.buscar {
+  grid-area: barrabuscar;
+  display: inline-block;
+  text-align: right; }
+  .buscar .button_anillo {
+    border: 0;
+    transition: transform 0.3s; }
+    .buscar .button_anillo:hover {
+      transform: rotate(30deg); }
+
+.banner {
+  grid-area: bannerimg;
+  font-size: 0px;
+  background-image: url(../imagenes/jewelry-paris.png);
+  height: 580px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: auto; }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.productos {
+  border: 1px solid grey;
+  border-radius: 15px 0px;
+  height: 495px;
+  width: 255px;
+  background-color: lightgrey;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 40px; }
+  .productos > div {
+    display: inline-block;
+    text-align: center;
+    width: 255px; }
+    .productos > div img {
+      margin-bottom: 10px; }
+
+.productos_uno,
+.productos_dos {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  flex-wrap: wrap; }
+
+.productos_dos {
+  margin-bottom: 40px; }
+
+.vermas {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  background-color: lightgrey;
+  font-weight: 700;
+  margin-top: 2%;
+  transition: color 0.1s ease-in, background-color 0.1s ease-in; }
+  .vermas:hover {
+    color: white;
+    background-color: black; }
+
+.aros,
+.collares,
+.anillos,
+.dijes {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  column-gap: 10px;
+  flex-wrap: wrap; }
+
+.huno_productos,
+.hdos_productos {
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.huno_productos {
+  margin-bottom: 5%; }
+
+.hdos_productos {
+  border: 1px solid grey;
+  background-color: lightgrey;
+  width: 100%; }
+
+.preguntas_parrafo {
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 100px;
+  margin-top: 50px; }
+
+.preguntas_frecuentes,
+.hdos_preguntas {
+  font-family: "Lexend Tera", sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0; }
+
+.pregunta_uno {
+  margin-bottom: 20px; }
+
+.pregunta_dos {
+  margin-bottom: 20px; }
+  .pregunta_dos p a {
+    color: black; }
+
+.pregunta_tres {
+  margin-bottom: 20px; }
+
+.pregunta_cuatro {
+  margin-bottom: 20px; }
+  .pregunta_cuatro li a {
+    color: black; }
+
+.main_nosotros {
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.huno_nosotros {
+  font-family: "Lexend Tera", sans-serif;
+  padding-top: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center; }
+
+.info {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px; }
+
+.parrafo_nosotros {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px; }
+
+.imagen_banco_joyeria {
+  display: flex;
+  justify-content: center;
+  font-size: 0px;
+  background-image: url(../imagenes/banco_de_joyeria.jpg);
+  height: 646px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5%; }
+
+.comentarios {
+  color: #000;
+  background-color: #f3f2f2;
+  font-family: "Quicksand", sans-serif; }
+  .comentarios p {
+    font-size: 17px; }
+
+.parrafo_joyas {
+  background-image: linear-gradient(to right, lightgrey 0%, transparent 100%);
+  border-radius: 20px; }
+
+.slogan {
+  text-transform: uppercase;
+  font-family: "Lexend Tera", sans-serif; }
+
+.huno_contacto,
+.hdos_contacto {
+  font-family: "Lexend Tera", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 4% 0; }
+
+.htres_contactos {
+  font-family: "Quicksand", sans-serif; }
+
+.form_contactos {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  column-gap: 2%; }
+
+.formulario {
+  display: inline-block; }
+
+.rellenar {
+  border: 2px solid #c3c3c3;
+  padding: 15px; }
+  .rellenar > div {
+    padding-top: 5px; }
+
+.robot {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; }
+
+.submit {
+  padding-top: 20px; }
+  .submit .btn {
+    background-color: lightgrey;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase; }
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  width: auto;
+  margin-top: auto;
+  padding-top: 150px;
+  padding-bottom: 50px; }
+  .redes a img {
+    transition: transform 0.1s ease-in; }
+    .redes a img:hover {
+      transform: scale(1.2); }
+
+.footer {
+  background-image: linear-gradient(to top, lightgrey 0%, transparent 100%); }
+
+.disclaimer {
+  font-size: 16px;
+  font-family: "Lexend Tera", sans-serif;
+  font-weight: 200;
+  padding: 50px; }
+
+@media (max-width: 1530px) {
+  .menu_desktop,
+  .carrito_del_header {
+    font-size: 13px;
+    padding: 2% 0; }
+    .menu_desktop li a,
+    .carrito_del_header li a {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px; }
+  .menu_y_carrito {
+    padding-bottom: 3%; }
+  .logo_img img {
+    max-width: 300px;
+    width: 100%; }
+  header {
+    padding: 0; }
+  .button_anillo img {
+    height: 85px; }
+  .huno_nosotros {
+    padding-top: 9%; }
+  .huno_productos {
+    margin: 7%; } }
+
+@media (max-width: 1190px) {
+  .header_img {
+    background-image: url("../imagenes/header_mobile.png");
+    background-size: 1400px auto; }
+  .titulo_buscar_banner {
+    padding-top: 7%; }
+  .titulo_principal {
+    padding: 0 5%; }
+  .banner {
+    height: 400px; }
+  .menu_desktop li a {
+    padding: 1px 5px; }
+  .imagen_banco_joyeria {
+    background-size: 100%;
+    max-width: auto; }
+  .anillero {
+    max-width: 700px;
+    width: 100%; }
+  .form_contactos {
+    flex-wrap: wrap; } }
+
+@media (max-width: 937px) {
+  .htres_contactos {
+    margin: 10% 0; } }
+
+@media (max-width: 966px) {
+  .menu_desktop li {
+    display: flex;
+    justify-content: center; } }
+
+@media (max-width: 850px) {
+  .imagen_banco_joyeria {
+    height: 400px; }
+  .menu_y_carrito {
+    padding-bottom: 12%; } }
+
+@media (max-width: 480px) {
+  .header_img {
+    background-image: url("../imagenes/header_mobile.png");
+    background-size: 765px auto; }
+  .item_menu a {
+    color: black;
+    border-color: black; }
+  .logo_img img {
+    width: 100%;
+    max-width: 180px;
+    padding: 20px; }
+  .header {
+    display: flex; }
+  .boton_buscar,
+  .menu_y_carrito {
+    display: flex;
+    align-items: center;
+    padding: 0 2%; }
+  .imagenes_menu img {
+    width: 60px;
+    height: auto;
+    padding: 5px; }
+  .menu_desktop {
+    display: none; }
+  .boton_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .banner {
+    display: none; }
+  .form {
+    display: none !important; }
+  .titulo_buscar_banner {
+    grid-template-areas: "tituloprincipal tituloprincipal tituloprincipal";
+    width: 90%; }
+  .titulo_principal p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px; }
+  .buscar {
+    display: none; }
+  .imagen_banco_joyeria {
+    margin: 0; }
+  .huno_contacto,
+  .hdos_contacto {
+    display: inline-block;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px; }
+  .redes {
+    padding-top: 20%; }
+    .redes img {
+      height: 60px;
+      width: 60px; } }
